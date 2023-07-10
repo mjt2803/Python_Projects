@@ -10,7 +10,7 @@ class City:
     self.get_data()
   def get_data(self):
     try:
-      response = requests.get(f"https://api.openweathermap.org/data/2.5/weather?units={self.units}&lat={self.lat}&lon={self.lon}&appid={API_address}")
+      response = requests.get(f"https://api.openweathermap.org/data/2.5/weather?units={self.units}&lat={self.lat}&lon={self.lon}&appid={API_Key}")
     except:
       print("No internet access")
 
